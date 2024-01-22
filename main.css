@@ -1,0 +1,32 @@
+:root{
+    --black:rgb(238, 243, 247);
+}
+
+.bg-color{
+    background-color:var(--green);
+}
+
+.bg-primary{
+    background-color:var(--pink);
+    font-size: 9px;
+}
+
+.nav-item{
+    border-bottom: 0.5px solid black;
+}
+
+.nav-link{
+    border-radius: 16px;
+}
+
+.nav-link:hover{
+    transition: 0.5s;
+    color: white !important;
+    background-color: black;
+}
+
+@media(min-widht:992px;){
+    .nav-item{
+        border-bottom: none;
+    }
+}
