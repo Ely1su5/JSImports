@@ -24,7 +24,7 @@
                 <img src="./SRC/boat.png"alt="JS IMPORTS" width="30" height="30" >
                 <span class="text-uppercase">JS IMPORTS</span>
             </a>
-            <div class="order-lg-2">
+            <div class="order-lg-2 nav-btns">
                 <!--Soping kart-->
                 <button class="btn position-relative" type="button">
                     <i class="fa-solid fa-cart-arrow-down"></i>
@@ -79,13 +79,83 @@
     </nav>
     
     <!--header-->
-    <header id="header" class="vh-100 carousel slide" db-bs-ride="carousel" style="padding-top:104px;"></header>
+    <header id="header" class="vh-100 carousel slide" db-bs-ride="carousel" style="padding-top:104px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            
+       
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-dark">Best collection</h2>
+                <h1 class="py-3 text-uppercase fw-bold text-dark">
+                    new products aviable
+                </h1>
+                <a href="#" class="btn mt-3 text-uppercase"> shop now</a>
+            </div>
+        
+            <div class="text-center carousel-item ">
+                <h2 class="text-capitalize text-dark">Fiability</h2>
+                <h1 class="py-3 text-uppercase fw-bold text-dark">
+                    new products aviable
+                </h1>
+                <a href="#" class="btn mt-3 text-uppercase"> confiability</a>
+            </div>
+        
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-dark">Best collection</h2>
+                <h1 class="py-3 text-uppercase fw-bold text-dark">
+                    new products aviable
+                </h1>
+                <a href="#" class="btn mt-3 text-uppercase"> shop now</a>
+            </div>
+        </div>
+    
+        <button class="carousel-control-prev"
+        data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+    
+        <button class="carousel-control-next"
+        data-bs-target="#header" data-bs-slide="next">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+    </header>
     <!--header end-->
     
-    <!--JQUERY-->
+    <!--collection-->
+    <section id="collection" class="py5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="psition-relative d-inline-block">
+                    New products
+                </h2>
+            </div>
+
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button class="btn m-2 active-filter-btn" data-filter="*" type="button">
+                        All
+                    </button>
+                    <button class="btn m-2 " data-filter=".best" type="button">
+                        Best sellers
+                    </button>
+                    <button class="btn m-2" data-filter=".feat" type="button">
+                        Featured
+                    </button>
+                    <button class="btn m-2" data-filter=".new" type="button">
+                        New prints
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--collection-->
+    
+     <!--JQUERY-->
     <script src="./JS/jquery"></script>
     <!--JQUERY-->
-     <!--My JS-->
+    <!--isotope-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!--isotope-->
+    <!--My JS-->
      <script src="./JS/app.js"></script>
      <!--My JS-->
       <!--bootstrap JS-->
