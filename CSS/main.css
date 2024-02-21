@@ -31,7 +31,7 @@
 
 /*HEADER*/
 #header{
-    background:url(../src/bg.png) top/cover no-repeat;
+    background:url(/SRC/barco1.png) top/cover no-repeat;
 }
 
 .btn:not(.nav-btns button){
@@ -49,6 +49,48 @@
     color: rgb(16, 17, 17);
     border-color: var(--blue);
     transition: 0.5s;
+}
+
+/* Collection */
+.title h2::before{
+    position: relative;
+    content: ".";
+    color:gray;
+    width: 4px;
+    height: 50px;
+    background-color:gray;
+    left: -20px;
+}
+
+/*Collection*/
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: skyblue;
+}
+
+.best{
+    border-radius: 20px;
+}
+
+.collection-img img{
+    border-radius: 20px;
+}
+
+.img-r{
+    border-radius: 20px;
+}
+
+/* Offers */
+#offers¨{
+    background: url(../SRC/Contenedor1.jpg)
+}
+
+#offers-content .row{
+    min-height: 60vh;
 }
 
 @media(min-widht:992px){
