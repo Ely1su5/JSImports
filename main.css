@@ -2,8 +2,13 @@
     --black:rgb(238, 243, 247);
 }
 
+.nav-ani{
+    background-color:aqua;
+}
+
 .bg-color{
-    background-color:var(--green);
+    background-color:gray;
+    transition: 0.5s;
 }
 
 .bg-primary{
@@ -31,7 +36,7 @@
 
 /*HEADER*/
 #header{
-    background:url(/SRC/barco1.png) top/cover no-repeat;
+    background:url(./SRC/barco1.png) top/cover no-repeat;
 }
 
 .btn:not(.nav-btns button){
@@ -55,10 +60,10 @@
 .title h2::before{
     position: relative;
     content: ".";
-    color:gray;
+    color:lightgray;
     width: 4px;
     height: 50px;
-    background-color:gray;
+    background-color:lightgray;
     left: -20px;
 }
 
@@ -85,12 +90,29 @@
 }
 
 /* Offers */
-#offers¨{
-    background: url(../SRC/Contenedor1.jpg)
+#offers{
+    background:url(./SRC/Contenedor2.png) top/cover no-repeat;
 }
 
 #offers-content .row{
     min-height: 60vh;
+}
+
+/* News*/
+#newsletter{
+    background-color: darkgray;
+}
+#newsletter p{
+    max-width: 600px;
+}
+
+#newsletter .input-group{
+    max-width:500px;
+}
+
+#newsletter .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 @media(min-widht:992px){

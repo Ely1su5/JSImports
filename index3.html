@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E - commerce</title>
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Font awesome-->
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <!--Bootstrap-->
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="./CSS/main.css">
+    <!--Main CSS-->
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg shadow navbar-light py-2 fixed-top ">
+        <div class="container-fluid">
+            <a href="#header" class="navbar-brand text-white 
+            justify-content-center align-item-center d-flex order-lg-0">
+                <img src="./SRC/tree-silhouette.png" alt="ECO" width="30" height="30">
+                <span class="text-uppercase ms-2">eco</span>
+            </a>
+
+            <div class="order-lg-2 nav-btns">
+                <!--SHOPPING CART-->
+                <button class="btn position-relative" type="button">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle
+                    badge bg-primary">5</span>
+                </button>
+
+                <!--FAVORITES-->
+                <button class="btn position-relative" type="button">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle
+                    badge bg-primary">5</span>
+                </button>
+
+                <!--SEARCH-->
+                <button class="btn position-relative" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center fw-bold">
+                    <li class="nav-item px-2 py-2">
+                        <a href="#header" class="nav-link text-uppercase 
+                        text-white">home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#collection" class="nav-link text-uppercase 
+                        text-white">collection</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#specials" class="nav-link text-uppercase 
+                        text-white">specials</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#3DPrinters" class="nav-link text-uppercase 
+                        text-white">3D Printers</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#about" class="nav-link text-uppercase 
+                        text-white">about us</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#popular" class="nav-link text-uppercase 
+                        text-white">popular</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--HEADER-->
+    <header id="header" class="vh-100 carousel slide" 
+    db-bs-ride="carousel" style="padding-top:104px;">
+        <div class="container h-100 d-flex align-items-center
+        carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white">Best collection</h2>
+                <h1 class="py-3 text-uppercase fw-bold text-white">
+                    new prints avilable
+                </h1>
+                <a href="#" class="btn mt-3 text-uppercase"> shop now</a>
+            </div>
+
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">quality & durability</h2>
+                <h1 class="py-3 text-uppercase fw-bold text-white">
+                    new offers
+                </h1>
+                <a href="#" class="btn mt-3 text-uppercase">buy now</a>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" 
+        data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" 
+        data-bs-target="#header" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!--HEADER END-->
+
+    <!--Collection-->
+    <section id="collection" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relaive d-inline-block">
+                    New collection
+                </h2>
+            </div>
+
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5
+                filter-button-group">
+                    <button class="btn m-2 active-filter-btn" data-filter="*" 
+                    type="button">
+                        All
+                    </button> 
+                    <button class="btn m-2" data-filter=".best" type="button">
+                        Best sellers 
+                    </button> 
+                    <button class="btn m-2" data-filter=".feat" type="button">
+                        Featured
+                    </button> 
+                    <button class="btn m-2" data-filter=".new" type="button">
+                        New prints
+                    </button> 
+                </div>
+            </div>
+
+            <div class="collection-list mt-4 row gx-0 gy-3">
+                <!--Number 1-->
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 best col me-0">
+                    <div class="collection-img position-relative">
+                        <img class="w-100" src="src/c_formal_gray_shirt.png" alt="">
+                        <span class="position-absolute bg-green1 text-white 
+                        justify-content-center align-items-center d-flex">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">Gray shirt</p>
+                        <span class="fw-bold">$ 45.50</span>
+                    </div>
+                </div>
+                <!--Number 1-->
+
+                <!--Number 2-->
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 new shadow col ">
+                    <div class="collection-img position-relative">
+                        <img class="w-100" src="src/c_pant_girl.png" alt="">
+                        <span class="position-absolute bg-green1 text-white 
+                        justify-content-center align-items-center d-flex">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">Gray shirt</p>
+                        <span class="fw-bold">$ 45.50</span>
+                    </div>
+                </div>
+                <!--Number 2-->
+
+                <!--Number 3-->
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat shadow col ">
+                    <div class="collection-img position-relative">
+                        <img class="w-100" src="src/c_polo-shirt.png" alt="">
+                        <span class="position-absolute bg-green1 text-white 
+                        justify-content-center align-items-center d-flex">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">Gray shirt</p>
+                        <span class="fw-bold">$ 45.50</span>
+                    </div>
+                </div>
+                <!--Number 3-->
+
+                <!--Number 4-->
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat shadow col ">
+                    <div class="collection-img position-relative">
+                        <img class="w-100" src="src/c_shirt-girl.png" alt="">
+                        <span class="position-absolute bg-green1 text-white 
+                        justify-content-center align-items-center d-flex">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">Gray shirt</p>
+                        <span class="fw-bold">$ 45.50</span>
+                    </div>
+                </div>
+                <!--Number 4-->
+
+                <!--Number 5-->
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 new shadow col ">
+                    <div class="collection-img position-relative">
+                        <img class="w-100" src="src/c_t-shirt_men.png" alt="">
+                        <span class="position-absolute bg-green1 text-white 
+                        justify-content-center align-items-center d-flex">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">Gray shirt</p>
+                        <span class="fw-bold">$ 45.50</span>
+                    </div>
+                </div>
+                <!--Number 5-->
+
+                <!--Number 6-->
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 best shadow col ">
+                    <div class="collection-img position-relative">
+                        <img class="w-100" src="src/c_tunic-shirt_girl.png" alt="">
+                        <span class="position-absolute bg-green1 text-white 
+                        justify-content-center align-items-center d-flex">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">Gray shirt</p>
+                        <span class="fw-bold">$ 45.50</span>
+                    </div>
+                </div>
+                <!--Number 6-->
+
+                <!--Number 7-->
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 best shadow col ">
+                    <div class="collection-img position-relative">
+                        <img class="w-100" src="src/c_undershirt.png" alt="">
+                        <span class="position-absolute bg-green1 text-white 
+                        justify-content-center align-items-center d-flex">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">Gray shirt</p>
+                        <span class="fw-bold">$ 45.50</span>
+                    </div>
+                </div>
+                <!--Number 7-->
+
+                <!--Number 8-->
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 new shadow col ">
+                    <div class="collection-img position-relative">
+                        <img class="w-100" src="src/c_western-shirt.png" alt="">
+                        <span class="position-absolute bg-green1 text-white 
+                        justify-content-center align-items-center d-flex">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">Gray shirt</p>
+                        <span class="fw-bold">$ 45.50</span>
+                    </div>
+                </div>
+                <!--Number 8-->
+            </div>
+        </div>
+    </section>
+    <!--Collection end-->
+
+    <!--Special products-->
+    <section class="py-5" id="special">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative 
+                d-inline-block">
+                    Special collection
+                </h2>
+            </div>
+
+            <div class="special-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="./SRC/c_shirt-girl.png" alt="" class="w-100 img-r">
+                        <span class="position-absolute align-items-center 
+                        justify-content-center d-flex fs-4 text-primary">
+                        <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3">
+                            gray Shirt
+                        </p>
+                        <span class="fw-bold d-block">$45.00</span>
+                        <a href="#" class="btn btn-primary text-dark">add to cart</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="./SRC/c_shirt-girl.png" alt="" class="w-100 img-r">
+                        <span class="position-absolute align-items-center 
+                        justify-content-center d-flex fs-4 text-primary">
+                        <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3">
+                            gray Shirt
+                        </p>
+                        <span class="fw-bold d-block">$45.00</span>
+                        <a href="#" class="btn btn-primary text-dark">add to cart</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="./SRC/c_shirt-girl.png" alt="" class="w-100 img-r">
+                        <span class="position-absolute align-items-center 
+                        justify-content-center d-flex fs-4 text-primary">
+                        <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3">
+                            gray Shirt
+                        </p>
+                        <span class="fw-bold d-block">$45.00</span>
+                        <a href="#" class="btn btn-primary text-dark">add to cart</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="./SRC/c_shirt-girl.png" alt="" class="w-100 img-r">
+                        <span class="position-absolute align-items-center 
+                        justify-content-center d-flex fs-4 text-primary">
+                        <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3">
+                            gray Shirt
+                        </p>
+                        <span class="fw-bold d-block">$45.00</span>
+                        <a href="#" class="btn btn-primary text-dark">add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+    </section>
+    <!--Special products end-->
+
+
+    <!-- Offers -->
+    <section class="py-5" id="offers">
+        <div class="container">
+            <div class="row d-flex align-items-center 
+            text-center justify-content-center 
+            justify-content-lg-start text-lg-start">
+                <div class="offers-content">
+                    <span class="text-white fs-2">
+                        Discount Up to 40%
+                    </span>
+                    <h2 class="mt-2 mb-4 fs-1 text-white">
+                        Grand Sale Offer!
+                    </h2>
+                    <a href="" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Offers end -->
+
+    <!-- Blogs opinion -->
+    <section id="blogs" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">
+                    Our Latest Blog
+                </h2>
+            </div>
+            <div class="row g-3">
+                <div class="card border-0 col-md-6 col-lg-4 
+                bg-transparent my-3">
+                <img src="./SRC/blog_1.jpg" alt="">
+                <div class="card-body px-0">
+                    <h4 class="card-title">lorem ipsum</h4>
+                    <p class="card-ext mt-3 text-muted">
+                      Lorem ipsum dolor sit, amet consectetur 
+                      adipisicing elit. Obcaecati quod voluptate 
+                      expedita sit! Harum atque veritatis, 
+                      modi facilis quo consectetur nihil dolore 
+                      ducimus quis sit, impedit unde, 
+                      minima voluptatibus tempore.  
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            <span class="fw-bold">
+                                Author:
+                            </span> Jesús Alcalá
+                        </small>
+                    </p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+                <div class="card border-0 col-md-6 col-lg-4 
+                bg-transparent my-3">
+                <img src="./SRC/blog_1.jpg" alt="">
+                <div class="card-body px-0">
+                    <h4 class="card-title">lorem ipsum</h4>
+                    <p class="card-ext mt-3 text-muted">
+                    Lorem ipsum dolor sit, amet consectetur 
+                    adipisicing elit. Obcaecati quod voluptate 
+                    expedita sit! Harum atque veritatis, 
+                    modi facilis quo consectetur nihil dolore 
+                    ducimus quis sit, impedit unde, 
+                    minima voluptatibus tempore.  
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            <span class="fw-bold">
+                                Author:
+                            </span> Jesús Alcalá
+                        </small>
+                    </p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+                <div class="card border-0 col-md-6 col-lg-4 
+                bg-transparent my-3">
+                <img src="./SRC/blog_1.jpg" alt="">
+                <div class="card-body px-0">
+                    <h4 class="card-title">lorem ipsum</h4>
+                    <p class="card-ext mt-3 text-muted">
+                    Lorem ipsum dolor sit, amet consectetur 
+                    adipisicing elit. Obcaecati quod voluptate 
+                    expedita sit! Harum atque veritatis, 
+                    modi facilis quo consectetur nihil dolore 
+                    ducimus quis sit, impedit unde, 
+                    minima voluptatibus tempore.  
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            <span class="fw-bold">
+                                Author:
+                            </span> Jesús Alcalá
+                        </small>
+                    </p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blogs opinion end-->
+
+    <!-- about us -->
+    <section id ="about" class="py-5" style="background-color:rgb(247, 246, 246)">
+       <div class="container">
+            <div class="row gy-lg-5 align-items-center">
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="title pt-3 pb-5 ms-3">
+                    <h2 class="position-relative d-inline-block">
+                        About Us 
+                    </h2>
+                </div>
+                <p class="lead text-muted">Los teslas no queman barcos, lo juro!!!!</p>
+                <p>Todos los teslas son buenos carros, pero como no 
+                    todos los carros son teslas
+                    no todos los carros son buenos... Que lamentable...
+                </p>
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="./SRC/tesla-para-jesús-duran.jpg" 
+                    alt="" class="img-fluid rounded">
+                </div>
+            </div>
+       </div> 
+    </section>
+    <!-- about us end-->
+
+    <!--Newsletter-->
+    <section id="newsletter" class="py-5">
+        <div class="container">
+            <div class="d-flex flex-column 
+            align-items-center justify-content-center">
+                <div class="title text-center">
+                    <h2 class="position-relative d-inline-block">
+                        Newsletter
+                    </h2>
+                </div>
+                <p class="text-center text-muted mt-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Possimus 
+                    rem officia accusantium maiores quisquam dolorum?
+                </p>
+                <div class="input-group mb-3 mt-3">
+                    <input type="text" class="form-control"
+                    placeholder="Los teslas son mejores!">
+                    <button class="btn btn-primary" type="submit">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Newsletter end-->
+    <!-- Footer -->
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                   <a href="#header" class="text-uppercase 
+                   text-decoration-none brand text-white">
+                   ECO
+                   </a> 
+                <p class="mt-3">Lorem ipsum dolor, 
+                    sit amet consectetur adipisicing elit. 
+                    Alias molestiae distinctio animi dolore! 
+                    Et distinctio enim optio possimus unde 
+                    aspernatur eius mollitia vero modi ut. 
+                    Necessitatibus aperiam quia dignissimos minima.</p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="" class="text-decoration-none
+                             text-white">
+                             <i class = "fas fa-chevron-right me-1"></i>
+                             Home
+                        </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="" class="text-decoration-none
+                             text-white">
+                             <i class = "fas fa-chevron-right me-1"></i>
+                             Collection
+                        </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="" class="text-decoration-none
+                             text-white">
+                             <i class = "fas fa-chevron-right me-1"></i>
+                             Blogs
+                        </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="" class="text-decoration-none
+                             text-white">
+                             <i class = "fas fa-chevron-right me-1"></i>
+                             About us
+                        </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="" class="text-decoration-none
+                             text-white">
+                             <i class = "fas fa-chevron-right me-1"></i>
+                             Newsletter
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Contact us</h5>
+                    <div class="d-flex justify-content-start 
+                    align-items-start my-2">
+                        <span class="me-3">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            Albert Street, New York, AS 756, 
+                            United States of America
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start 
+                    align-items-start my-2">
+                        <span class="me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class="fw-light">
+                            eco.support@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start 
+                    align-items-start my-2">
+                        <span class="me-3">
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            +123456789
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">
+                        Follow Us
+                    </h5>
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a href="" class=" text-white text-decoration-none me-4">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-white text-decoration-none me-4">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-white text-decoration-none me-4">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-white text-decoration-none me-4">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+    <!--JQUERY-->
+    <script src="./JS/jquery-3.7.1.js"></script>
+    <!--JQUERY-->
+    <!--Isotope-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!--Isotope-->
+    <!--My JS-->
+    <script src="./JS/app.js"></script>
+    <!--My JS-->
+    <!--Bootstrap JS-->
+    <script src="./bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <!--Bootstrap JS-->
+</body>
+</html>
